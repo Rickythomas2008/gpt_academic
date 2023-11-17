@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 对项目中的各个插件进行测试。运行方法：直接运行 python tests/test_plugins.py
 """

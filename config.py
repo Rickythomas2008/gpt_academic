@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
     以下所有配置也都支持利用环境变量覆写，环境变量配置格式见docker-compose.yml。
     读取优先级：环境变量 > config_private.py > config.py
@@ -8,12 +9,12 @@
 """
 
 # [step 1]>> API_KEY = "sk-123456789xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx123456789"。极少数情况下，还需要填写组织（格式如org-123456789abcdefghijklmno的），请向下翻，找 API_ORG 设置项
-API_KEY = "此处填API密钥"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey3,azure-apikey4"
+API_KEY = "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"    # 可同时填写多个API-KEY，用英文逗号分割，例如API_KEY = "sk-openaikey1,sk-openaikey2,fkxxxx-api2dkey3,azure-apikey4"
 
 
 # [step 2]>> 改为True应用代理，如果直接在海外服务器部署，此处不修改；如果使用本地或无地域限制的大模型时，此处也不需要修改
 USE_PROXY = False
-if USE_PROXY:
+if USE_PROXY == 'True':
     """
     填写格式是 [协议]://  [地址] :[端口]，填写之前不要忘记把USE_PROXY改成True，如果直接在海外服务器部署，此处不修改
             <配置教程&视频教程> https://github.com/binary-husky/gpt_academic/issues/1>

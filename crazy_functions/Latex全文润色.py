@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from toolbox import update_ui, trimmed_format_exc, promote_file_to_downloadzone, get_log_folder
 from toolbox import CatchException, report_execption, write_history_to_file, zip_folder
 
